@@ -1,0 +1,50 @@
+/* selector co ban 
+selector tim thanh phan nao nhanh nhat + ngan nhat de hien thi
+class gom 1 dong thang nen tim nhanh hon*/
+
+/* h1.title{
+    color: purple;
+} */
+
+/* h1 so voi .class nhan class
+h1 so voi h1.class nhan h1.class */
+/* h1 {
+    color: red;
+} */
+
+/* ton tai dong thoi 2 class */
+h1.title.title-2{
+    color: purple;
+}
+
+.title {
+    color: yellow;
+}
+
+/* css attr selector */
+/* ~= tim 1 trong nhieu gia tri chinh xac */
+/* input[type~='text'] {
+    border: 3px solid red;
+} */
+
+/* *= tuc la co ky tu nhu mo ta la duoc */
+input[class*='ext'] {
+    border: 3px solid red;
+}
+
+/* tim ky tu ket thuc */
+a[href$='.org'] {
+    color: orange;
+}
+
+/* tim ky tu dau tien */
+a[href^='http'] {
+    color: pink;
+}
+
+p[class|='text'] {
+    color: yellow;
+}
+
+
+

@@ -1,0 +1,113 @@
+html{
+    font-size: 62.5%;
+    /* 10px = 1rem */
+}
+
+/* header.header > h1.title {
+    color: red;
+} */
+
+div.box  h1.title {
+    color: red;
+}
+
+header.header > h1.title ~ h2.content, p.text {
+color: blue;
+}
+
+div.wraper header.header + nav.nav > ul.menu li.item a.link {
+    color: violet;
+}
+/* tìm thẻ đầu tiên */
+section.content :first-child {
+    color: red;
+}
+ /* tim tp the dau tien cua nhóm con khác nhau + duy nhất */
+section.content :first-of-type {
+    color: blue;
+}
+/* tìm thẻ cuôi cùng */
+section.content :last-child {
+    color: yellow;
+}
+/* tim tp the cuối cùng cua nhóm con khác nhau + duy nhất */
+section.content :last-of-type {
+    color: green;
+}
+/* tp thứ 4 từ trên xuống */
+section.content :nth-child(4) {
+    color: pink;
+}
+/* chọn tp thứ 4 của nhóm thẻ */
+section.content :nth-of-type(4) {
+    color:blueviolet;
+}
+/* tp thứ 2 từ dưới lên */
+section.content :nth-last-child(2) {
+    color: brown;
+}
+
+section.content :nth-last-of-type(2) {
+    color: orange;
+}
+/* tim li trực tiếp cuối cùng */
+ul.nav li:last-child {
+    color: red;
+}
+
+div.parent :only-child {
+    color: red;
+}
+/* viet lien no tac dong truc tiep vao tp */
+input[type='email']:focus {
+width: 200px;
+height: 30px;
+outline: none;
+border: 1px solid red;
+}
+
+input[type='checkbox']:checked {
+    width: 200px;
+    height: 200px;
+}
+
+a.link:active {
+    color: yellow;
+}
+
+a.link:visited {
+    color: green;
+}
+
+a.link:link {
+    color: orange;
+}
+
+ul.nav li:hover{
+    color: blue;
+}
+
+p.text-title::first-letter {
+    color: blue; 
+    font-size: 50px;
+}
+
+p.text-title::first-line {
+    color: red; 
+    font-size: 50px;
+}
+
+
+p.text-title::before {
+content: 'T3h';
+}
+
+p.text-title::after {
+content: url(../img/arsenal.png);
+}
+
+p.text-title::selection {
+color: yellow;
+background: #000;
+}
+
